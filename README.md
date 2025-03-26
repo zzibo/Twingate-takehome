@@ -12,8 +12,17 @@ Implement a virtual memory manager that manages allocations and deallocations on
 ### Setup Instructions
 1. Create and activate a virtual environment:
 ```bash
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+# Or using python3 explicitly:
+python3 -m venv venv
+
+
+# Activate virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+.\venv\Scripts\activate
 ```
 
 2. Install dependencies:
@@ -23,7 +32,7 @@ pip install -r requirements.txt
 
 3. Run tests:
 ```bash
-python pytest tests.py
+pytest tests.py
 ```
 
 ## Decision Choices
